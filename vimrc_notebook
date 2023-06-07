@@ -1,0 +1,27 @@
+let mapleader=' '
+
+colorscheme darkblue
+
+set bg=dark
+
+" sets our tab size to 4 spaces
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+" converts our tabs to spaces
+set expandtab
+set autoindent
+set fileformat=unix
+
+set relativenumber
+
+nmap <leader>w :w<cr>
+nmap <leader>e :Ex<cr>
+
+call plug#begin()
+
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'https://github.com/tpope/vim-surround'
+
+call plug#end()
